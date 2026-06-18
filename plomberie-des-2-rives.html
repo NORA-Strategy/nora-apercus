@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plomberie des 2 Rives — Plombier à Lévis et Québec | Résidentiel & commercial</title>
+<meta name="description" content="Plomberie des 2 Rives D.B. inc. — plombier résidentiel et commercial à Lévis, Québec et les environs depuis plus de 40 ans. Réparation de conduits d'égouts, chauffe-eau, pompes submersibles. Estimation gratuite.">
+<style>
+  :root{--brand:#c5283d;--brand-d:#9c1f30;--ink:#1c1f24;--muted:#5e6772;--bg:#f7f6f5;--line:#e6e4e2;--dark:#1f2329}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .ribbon{background:#1f2329;color:#e7d6d8;font-size:12.5px;text-align:center;padding:7px 14px}
+  .ribbon b{color:#fff}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:17.5px}
+  .logo .mark{width:42px;height:42px;border-radius:10px;background:var(--brand);display:grid;place-items:center;color:#fff;font-weight:800;font-size:18px}
+  .navlinks{display:flex;gap:26px;font-size:14.5px;font-weight:500;color:var(--muted)}
+  .navlinks a:hover{color:var(--brand)}
+  .callbtn{background:var(--brand);color:#fff;padding:11px 18px;border-radius:9px;font-weight:800;font-size:14.5px;white-space:nowrap}
+  .callbtn:hover{background:var(--brand-d)}
+  @media(max-width:780px){.navlinks{display:none}}
+  .hero{background:linear-gradient(145deg,#1f2329,#3a2a2d 50%,#c5283d);color:#fff;position:relative;overflow:hidden}
+  .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 18%,rgba(255,255,255,.12),transparent 40%)}
+  .hero .wrap{position:relative;z-index:2;padding:72px 22px 84px}
+  .badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:30px;font-size:13px;font-weight:700;margin-bottom:20px}
+  .hero h1{font-size:clamp(30px,5vw,50px);line-height:1.07;font-weight:800;max-width:780px;letter-spacing:-.5px}
+  .hero p{font-size:clamp(16px,2.2vw,20px);max-width:610px;margin-top:18px;color:#f0e6e7}
+  .cta{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+  .btn{padding:14px 24px;border-radius:9px;font-weight:700;font-size:15.5px;display:inline-flex;align-items:center;gap:9px}
+  .btn-w{background:#fff;color:var(--brand-d)}.btn-w:hover{background:#f3e9ea}
+  .btn-o{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}.btn-o:hover{background:rgba(255,255,255,.12)}
+  .trust{display:flex;flex-wrap:wrap;gap:22px;margin-top:34px;font-size:13.5px;color:#f0e6e7;align-items:center}
+  .trust span{display:flex;align-items:center;gap:7px}.dot{width:7px;height:7px;border-radius:50%;background:#ff9aa8}
+  section{padding:70px 0}
+  .eyebrow{color:var(--brand);font-weight:800;font-size:13px;letter-spacing:1.2px;text-transform:uppercase}
+  h2{font-size:clamp(24px,3.4vw,34px);font-weight:800;margin:8px 0 12px;letter-spacing:-.4px}
+  .lead{color:var(--muted);max-width:640px;font-size:16.5px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:38px}
+  .card{border:1px solid var(--line);border-radius:14px;padding:24px;transition:.18s;background:#fff}
+  .card:hover{box-shadow:0 12px 30px rgba(197,40,61,.10);transform:translateY(-3px);border-color:#ecd8db}
+  .ico{width:46px;height:46px;border-radius:11px;background:#fbeef0;color:var(--brand);display:grid;place-items:center;margin-bottom:15px;font-size:22px}
+  .card h3{font-size:17.5px;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:14.5px}
+  .alt{background:var(--bg)}
+  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+  @media(max-width:820px){.split{grid-template-columns:1fr;gap:30px}}
+  .stats{display:flex;flex-wrap:wrap;gap:36px;margin-top:26px}
+  .stat .n{font-size:36px;font-weight:800;color:var(--brand)}
+  .stat .l{color:var(--muted);font-size:14px}
+  .panel{background:var(--dark);color:#fff;border-radius:18px;padding:34px;border-top:3px solid var(--brand)}
+  .panel h3{font-size:20px;margin-bottom:16px}
+  .li{display:flex;gap:11px;align-items:flex-start;margin:11px 0;font-size:15px;color:#e7e4e2}
+  .li svg{flex:none;margin-top:3px}
+  .zones{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .zone{background:#fff;border:1px solid var(--line);border-radius:30px;padding:8px 16px;font-size:14px;font-weight:600;color:var(--muted)}
+  .contact{background:#1f2329;color:#fff}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr;gap:26px}}
+  .contact h2{color:#fff}
+  .crow{display:flex;gap:13px;align-items:center;margin:15px 0;font-size:16px}
+  .crow .ci{width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.10);display:grid;place-items:center;color:#ff9aa8;flex:none}
+  .ftr{background:#15181c;color:#9a9590;font-size:13px;text-align:center;padding:26px 22px}
+  form input,form textarea{width:100%;padding:12px 14px;border:1px solid #3a3f46;background:#2a2f36;color:#fff;border-radius:9px;margin-top:10px;font-size:14.5px;font-family:inherit}
+  form button{margin-top:14px;width:100%;background:var(--brand);color:#fff;border:0;padding:14px;border-radius:9px;font-weight:800;font-size:15.5px;cursor:pointer}
+</style>
+<style id="nora-mobile-hardening">
+  html,body{max-width:100%;overflow-x:hidden}
+  img{max-width:100%;height:auto}
+  *{overflow-wrap:break-word}
+  @media (max-width:480px){
+    section{padding:50px 0}
+    .wrap{padding-left:18px;padding-right:18px}
+    .cta{flex-direction:column;align-items:stretch}
+    .cta .btn{justify-content:center}
+    .hero .wrap{padding-top:60px;padding-bottom:64px}
+    .nav{height:62px}
+  }
+</style>
+</head>
+<body>
+<div class="ribbon">🔎 <b>Aperçu de proposition</b> — nouvelle version conçue par <b>NORA</b> pour Plomberie des 2 Rives · maquette de démonstration</div>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo"><span class="mark">2R</span> Plomberie des 2 Rives</div>
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#entreprise">L'entreprise</a>
+      <a href="#zones">Zones desservies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:4185702131" class="callbtn">📞 418 570-2131</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">Plombier résidentiel & commercial · Lévis et Québec</span>
+    <h1>Un gage de satisfaction, des deux côtés du fleuve.</h1>
+    <p>Une histoire de famille depuis plus de 40 ans. Nous réalisons vos travaux de plomberie résidentielle et commerciale sur la Rive-Nord comme sur la Rive-Sud — estimation gratuite.</p>
+    <div class="cta">
+      <a href="tel:4185702131" class="btn btn-w">📞 418 570-2131</a>
+      <a href="#contact" class="btn btn-o">Soumission gratuite</a>
+    </div>
+    <div class="trust">
+      <span><span class="dot"></span> Plus de 40 ans d'expérience</span>
+      <span><span class="dot"></span> Entreprise familiale</span>
+      <span><span class="dot"></span> Membre CMMTQ</span>
+      <span><span class="dot"></span> RBQ 8284-5371-55</span>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow">Nos services</div>
+    <h2>Tous vos travaux de plomberie</h2>
+    <p class="lead">Du simple dépannage au projet complexe, en résidentiel comme en commercial.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🏠</div><h3>Plomberie résidentielle</h3><p>Installation, réparation et entretien de la plomberie de votre résidence.</p></div>
+      <div class="card"><div class="ico">🏢</div><h3>Plomberie commerciale</h3><p>Solutions fiables pour vos locaux, immeubles et commerces.</p></div>
+      <div class="card"><div class="ico">🚰</div><h3>Réparation de conduits d'égouts</h3><p>Débouchage, colmatage de fuites et remise en état des conduits d'égouts.</p></div>
+      <div class="card"><div class="ico">🔥</div><h3>Installation de chauffe-eau</h3><p>Vente et installation d'appareils de plomberie et de chauffe-eau.</p></div>
+      <div class="card"><div class="ico">⚙️</div><h3>Pompes submersibles</h3><p>Installation et remplacement de pompes submersibles et de puisards.</p></div>
+      <div class="card"><div class="ico">🔍</div><h3>Inspection & entretien</h3><p>Inspection, entretien préventif et conseils, avec estimation gratuite.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="entreprise">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">L'entreprise</div>
+      <h2>Une histoire de famille depuis plus de 40 ans</h2>
+      <p class="lead">La structure, les moyens matériels et les ressources humaines de notre entreprise nous permettent de satisfaire une clientèle de plus en plus exigeante. Nous jouissons d'une solide réputation à Lévis, à Québec et dans les environs — des résidences aux blocs d'appartements, en passant par les centres de la petite enfance et les restaurants.</p>
+      <div class="stats">
+        <div class="stat"><div class="n">40+</div><div class="l">Ans d'expérience</div></div>
+        <div class="stat"><div class="n">2</div><div class="l">Rives desservies</div></div>
+        <div class="stat"><div class="n">Gratuite</div><div class="l">Estimation</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Pourquoi nous choisir</h3>
+      <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#ff9aa8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <b style="color:#fff">Service de qualité</b> — minutie, finitions et disponibilité</div>
+      <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#ff9aa8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <b style="color:#fff">Réputation</b> bâtie sur plus de 40 ans dans la région</div>
+      <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#ff9aa8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <b style="color:#fff">Efficacité</b> sur tous travaux, simples ou complexes</div>
+      <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#ff9aa8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Membre CMMTQ · licence RBQ 8284-5371-55</div>
+    </div>
+  </div>
+</section>
+
+<section id="zones">
+  <div class="wrap">
+    <div class="eyebrow">Zones desservies</div>
+    <h2>Toute la région de Québec, Rive-Nord et Rive-Sud</h2>
+    <p class="lead">Nous desservons Lévis, Québec et les environs, dont :</p>
+    <div class="zones">
+      <span class="zone">Lévis</span><span class="zone">Québec</span><span class="zone">Sainte-Foy</span>
+      <span class="zone">L'Ancienne-Lorette</span><span class="zone">Saint-Nicolas</span>
+      <span class="zone">Saint-Augustin-de-Desmaures</span><span class="zone">Bellechasse</span>
+      <span class="zone">Stoneham-et-Tewkesbury</span><span class="zone">La Cité-Limoilou</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="grid2">
+      <div>
+        <div class="eyebrow" style="color:#ff9aa8">Contact</div>
+        <h2>Demandez une soumission gratuite</h2>
+        <p style="color:#b8b3ae;margin-top:10px">Faites appel à des plombiers expérimentés, maîtrisant toutes les facettes du métier.</p>
+        <div class="crow"><span class="ci">📞</span><a href="tel:4185702131">418 570-2131</a></div>
+        <div class="crow"><span class="ci">✉️</span><a href="mailto:c.belanger74@gmail.com">c.belanger74@gmail.com</a></div>
+        <div class="crow"><span class="ci">📍</span><span>28 Rue John-A.-Scott, Lévis (QC) G6Z 8K7</span></div>
+        <div class="crow"><span class="ci">🕘</span><span>Lundi au vendredi, 7 h à 17 h</span></div>
+      </div>
+      <div>
+        <form onsubmit="event.preventDefault();alert('Maquette de démonstration — formulaire non actif.');">
+          <input placeholder="Nom" required>
+          <input placeholder="Téléphone" required>
+          <input placeholder="Courriel" type="email">
+          <textarea placeholder="Demande de soumission / précisions" rows="4"></textarea>
+          <button type="submit">Envoyer ma demande</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ftr">
+  © 2026 Plomberie des 2 Rives D.B. inc. · 28 Rue John-A.-Scott, Lévis (QC) G6Z 8K7 · RBQ 8284-5371-55 · Membre CMMTQ<br>
+  <span style="opacity:.7">Maquette de proposition réalisée par NORA — nora-strategy.com</span>
+</div>
+</body>
+</html>

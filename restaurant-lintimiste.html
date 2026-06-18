@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'Intimiste — Restaurant & Lounge dans le Vieux-Lévis | Réservations</title>
+<meta name="description" content="L'Intimiste Restaurant & Lounge, au cœur du Vieux-Lévis. Cuisine raffinée, ambiance feutrée et une carte des vins de plus de 350 produits. Réservez votre table au 418 838-2711.">
+<style>
+  :root{--bg:#16110f;--bg2:#1f1814;--card:#241c17;--gold:#c9a36a;--gold-l:#e3c690;--cream:#f3ebdf;--muted:#b3a596;--line:#3a2e26}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--cream);line-height:1.65}
+  h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif}
+  a{color:inherit;text-decoration:none}
+  .ribbon{background:#0e0b09;color:#cdbfa9;font-size:12.5px;text-align:center;padding:7px 14px;border-bottom:1px solid var(--line)}
+  .ribbon b{color:var(--gold-l)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  header{position:sticky;top:0;z-index:50;background:rgba(22,17,15,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{font-family:Georgia,serif;font-size:25px;font-weight:700;letter-spacing:.5px;color:var(--cream)}
+  .logo span{color:var(--gold)}
+  .navlinks{display:flex;gap:28px;font-size:14px;letter-spacing:.5px;text-transform:uppercase;color:var(--muted)}
+  .navlinks a:hover{color:var(--gold-l)}
+  .resa{border:1px solid var(--gold);color:var(--gold-l);padding:10px 18px;border-radius:2px;font-size:13.5px;letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
+  .resa:hover{background:var(--gold);color:#1a120c}
+  @media(max-width:820px){.navlinks{display:none}}
+  .hero{position:relative;min-height:78vh;display:flex;align-items:center;background:linear-gradient(180deg,rgba(15,11,9,.55),rgba(15,11,9,.85)),radial-gradient(circle at 70% 30%,#3a2a1d,#16110f 70%);overflow:hidden}
+  .hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(201,163,106,.10) 1px,transparent 1px);background-size:26px 26px;opacity:.6}
+  .hero .wrap{position:relative;z-index:2;padding:80px 22px}
+  .kicker{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:13px;margin-bottom:22px}
+  .hero h1{font-size:clamp(40px,8vw,82px);line-height:1;font-weight:700;letter-spacing:-1px}
+  .hero h1 .amp{color:var(--gold);font-style:italic}
+  .hero p{max-width:540px;margin-top:24px;font-size:18px;color:#e7dccc}
+  .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+  .btn{padding:15px 28px;border-radius:2px;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;display:inline-flex;align-items:center;gap:9px}
+  .btn-g{background:var(--gold);color:#1a120c;font-weight:600}.btn-g:hover{background:var(--gold-l)}
+  .btn-o{border:1px solid rgba(227,198,144,.5);color:var(--gold-l)}.btn-o:hover{border-color:var(--gold)}
+  section{padding:84px 0}
+  .center{text-align:center;max-width:680px;margin:0 auto}
+  .kick2{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:12.5px}
+  h2{font-size:clamp(28px,4.5vw,42px);font-weight:700;margin:12px 0 18px;letter-spacing:-.5px}
+  .muted{color:var(--muted);font-size:16.5px}
+  .rule{width:54px;height:2px;background:var(--gold);margin:20px auto}
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px}
+  @media(max-width:780px){.duo{grid-template-columns:1fr}}
+  .feat{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:38px 32px}
+  .feat .n{font-family:Georgia,serif;font-style:italic;color:var(--gold);font-size:22px}
+  .feat h3{font-size:24px;margin:8px 0 12px}
+  .feat p{color:var(--muted);font-size:15.5px}
+  .menus{background:var(--bg2)}
+  .mgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px}
+  @media(max-width:780px){.mgrid{grid-template-columns:1fr}}
+  .mcard{border:1px solid var(--line);border-radius:4px;padding:34px;background:var(--card)}
+  .mcard h3{font-size:26px;color:var(--gold-l)}
+  .mcard .h{color:var(--muted);font-size:13px;letter-spacing:1px;text-transform:uppercase;margin:4px 0 18px}
+  .ml{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:11px 0;font-size:15.5px}
+  .ml span:last-child{color:var(--gold)}
+  .wines{text-align:center}
+  .bignum{font-family:Georgia,serif;font-size:clamp(60px,12vw,120px);color:var(--gold);line-height:1;font-weight:700}
+  .info{background:var(--bg2);border-top:1px solid var(--line)}
+  .igrid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+  @media(max-width:780px){.igrid{grid-template-columns:1fr;gap:34px}}
+  .irow{display:flex;gap:14px;margin:14px 0;align-items:flex-start}
+  .irow .ii{color:var(--gold);font-size:20px;width:26px;flex:none;text-align:center}
+  .hours div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:9px 0;font-size:15px;color:#e7dccc}
+  .hours span:last-child{color:var(--muted)}
+  .ftr{background:#0e0b09;color:#8a7d6d;font-size:13px;text-align:center;padding:30px 22px;border-top:1px solid var(--line)}
+  .ftr .logo{font-size:20px;display:block;margin-bottom:8px}
+</style>
+<style id="nora-mobile-hardening">
+  html,body{max-width:100%;overflow-x:hidden}
+  img{max-width:100%;height:auto}
+  *{overflow-wrap:break-word}
+  @media (max-width:480px){
+    section{padding:50px 0}
+    .wrap{padding-left:18px;padding-right:18px}
+    .cta{flex-direction:column;align-items:stretch}
+    .cta .btn{justify-content:center}
+    .hero .wrap{padding-top:60px;padding-bottom:64px}
+    .nav{height:62px}
+  }
+</style>
+</head>
+<body>
+<div class="ribbon">🔎 <b>Aperçu de proposition</b> — nouvelle version conçue par <b>NORA</b> pour L'Intimiste · maquette de démonstration</div>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">L'<span>Intimiste</span></div>
+    <nav class="navlinks">
+      <a href="#restaurant">Restaurant</a>
+      <a href="#menus">Menus</a>
+      <a href="#vins">Vins</a>
+      <a href="#info">Heures & accès</a>
+    </nav>
+    <a href="tel:4188382711" class="resa">Réserver</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">Vieux-Lévis · depuis le cœur de la ville</div>
+    <h1>Restaurant <span class="amp">&amp;</span> Lounge</h1>
+    <p>Une cuisine raffinée, une ambiance feutrée et une sélection de plus de 350 vins. L'Intimiste, l'adresse pour les grandes occasions comme les soirs ordinaires.</p>
+    <div class="cta">
+      <a href="tel:4188382711" class="btn btn-g">📞 Réserver — 418 838-2711</a>
+      <a href="#menus" class="btn btn-o">Voir les menus</a>
+    </div>
+  </div>
+</section>
+
+<section id="restaurant">
+  <div class="wrap center">
+    <div class="kick2">L'expérience</div>
+    <h2>Deux ambiances, une même table</h2>
+    <div class="rule"></div>
+    <p class="muted">Au cœur du Vieux-Lévis, L'Intimiste vous accueille dans un décor chaleureux et raffiné — une salle à manger conviviale et un lounge plus feutré pour vos moments privilégiés.</p>
+  </div>
+  <div class="wrap duo">
+    <div class="feat"><div class="n">i.</div><h3>Le restaurant</h3><p>Une table de marché aux saveurs soignées, à découvrir le midi comme en soirée, avec un salon privé pour vos réceptions et célébrations.</p></div>
+    <div class="feat"><div class="n">ii.</div><h3>Le lounge</h3><p>Une atmosphère plus intime et privée, idéale pour un cocktail, un apéro entre amis ou un verre après le repas.</p></div>
+  </div>
+</section>
+
+<section class="menus" id="menus">
+  <div class="wrap center">
+    <div class="kick2">Nos menus</div>
+    <h2>Le midi et la soirée</h2>
+    <div class="rule"></div>
+    <p class="muted">Une carte du midi pensée pour la pause, un menu du soir pour prendre son temps. Voici un aperçu de nos catégories — réservez pour la carte complète.</p>
+  </div>
+  <div class="wrap mgrid">
+    <div class="mcard">
+      <h3>Carte du midi</h3>
+      <div class="h">du jeudi au vendredi · 11h30 à 14h</div>
+      <div class="ml"><span>Entrées & potages</span><span>•</span></div>
+      <div class="ml"><span>Tables d'hôte du midi</span><span>•</span></div>
+      <div class="ml"><span>Plats du marché</span><span>•</span></div>
+      <div class="ml"><span>Desserts maison</span><span>•</span></div>
+    </div>
+    <div class="mcard">
+      <h3>Menu en soirée</h3>
+      <div class="h">du mercredi au samedi · dès 17h</div>
+      <div class="ml"><span>Entrées & partages</span><span>•</span></div>
+      <div class="ml"><span>Tables d'hôte du soir</span><span>•</span></div>
+      <div class="ml"><span>Spécialités & dégustations</span><span>•</span></div>
+      <div class="ml"><span>Desserts & digestifs</span><span>•</span></div>
+    </div>
+  </div>
+  <div class="wrap center" style="margin-top:34px">
+    <a href="tel:4188382711" class="btn btn-o">Commande pour emporter — 418 838-2711</a>
+  </div>
+</section>
+
+<section class="wines" id="vins">
+  <div class="wrap center">
+    <div class="kick2">La cave</div>
+    <div class="bignum">350+</div>
+    <h2>Produits à la carte des vins</h2>
+    <div class="rule"></div>
+    <p class="muted">Une sélection riche et variée pour accompagner chaque plat — laissez-vous conseiller par notre équipe pour trouver l'accord parfait.</p>
+  </div>
+</section>
+
+<section class="info" id="info">
+  <div class="wrap igrid">
+    <div>
+      <div class="kick2">Nous trouver</div>
+      <h2 style="font-size:30px">Heures & accès</h2>
+      <div class="irow"><span class="ii">📍</span><span>31 Avenue Bégin<br>Lévis (Québec) G6V 4B8</span></div>
+      <div class="irow"><span class="ii">📞</span><a href="tel:4188382711" style="color:var(--gold-l)">418 838-2711</a></div>
+      <div class="irow"><span class="ii">🍷</span><span>Réservations en ligne et par téléphone</span></div>
+    </div>
+    <div>
+      <div class="kick2">Ouvert</div>
+      <h2 style="font-size:30px">Heures d'ouverture</h2>
+      <div class="hours">
+        <div><span>Mercredi</span><span>17h – 22h</span></div>
+        <div><span>Jeudi</span><span>11h30 – 14h · 17h – 22h</span></div>
+        <div><span>Vendredi</span><span>11h30 – 14h · 17h – 22h</span></div>
+        <div><span>Samedi</span><span>17h – 22h</span></div>
+        <div><span>Dim · Mar</span><span>Fermé</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ftr">
+  <span class="logo serif">L'<span style="color:var(--gold)">Intimiste</span></span>
+  31 Avenue Bégin, Lévis (QC) G6V 4B8 · 418 838-2711 · Vieux-Lévis<br>
+  <span style="opacity:.7;display:inline-block;margin-top:8px">Maquette de proposition réalisée par NORA — nora-strategy.com</span>
+</div>
+</body>
+</html>
